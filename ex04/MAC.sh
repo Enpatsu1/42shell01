@@ -1,1 +1,1 @@
-ifconfig -a | grep  ether | tr -d ' ' | sed 's/^.*\(ether.*\).*$/\1/' | tr -d 'ether'
+ifconfig -a | grep  ether | cut -c 8-24
